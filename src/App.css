@@ -1,0 +1,110 @@
+.appShell {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 18px 16px 40px;
+}
+
+.appHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.appTitle {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.appSubtitle {
+  margin-top: 6px;
+  color: #555;
+  font-size: 13px;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 14px;
+  align-items: start;
+}
+
+.sidebar {
+  border: 1px solid #e6e6e6;
+  border-radius: 10px;
+  padding: 12px;
+  background: #fff;
+}
+
+.sidebarTitle {
+  font-weight: 750;
+  margin-bottom: 6px;
+}
+
+.formList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 8px;
+}
+
+.formListButton {
+  width: 100%;
+  text-align: left;
+  border: 1px solid #e6e6e6;
+  background: #fafafa;
+  border-radius: 10px;
+  padding: 10px 10px;
+  cursor: pointer;
+}
+
+.formListButton.active {
+  border-color: #bcd7ff;
+  background: #fbfdff;
+}
+
+.main {
+  min-width: 0;
+}
+
+.banner {
+  border: 1px solid #e6e6e6;
+  background: #fafafa;
+  border-radius: 10px;
+  padding: 12px;
+  margin-bottom: 12px;
+}
+
+.banner.error {
+  border-color: #f1baba;
+  background: #fff5f5;
+}
+
+.btn {
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  background: white;
+  cursor: pointer;
+}
+
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.muted {
+  color: #666;
+}
+
+.mono {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+}
+
+@media (max-width: 860px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+}
